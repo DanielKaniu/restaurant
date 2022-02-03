@@ -5,6 +5,16 @@
     --dark: #0F172B;
 }
 
+/*
+Greetings. */
+#greetings{
+    color: #FEA116;
+    font-size: larger;
+    margin-bottom: 30%;
+    word-spacing: 10px;
+    font-style: italic;
+}
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
