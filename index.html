@@ -138,7 +138,7 @@
         <div id="home_" class="container-xxl py-5 bg-dark hero-header mb-5">
           <div class="container my-5 py-5">
             <div class="row align-items-center g-5">
-              <div class="col-lg-6 text-center text-lg-start">
+              <div class="col-lg-4 text-center text-lg-start">
                 <h1 class="display-3 text-white animated slideInLeft">
                   Enjoy Our<br />Delicious Meal
                 </h1>
@@ -148,8 +148,8 @@
                   >Book A Table</a
                 >
               </div>
-              <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                <img class="img-fluid" src="img/hero.png" alt="" />
+              <div class="col-lg-8 pl-0 text-center text-lg-end overflow-hidden rotate">
+                <img class="img-fluid" src="img/ma.png" alt="" />
               </div>
             </div>
           </div>
@@ -2232,12 +2232,13 @@
                 Reservation
               </h5>
               <h1 class="text-white mb-4">Book A Table Online</h1>
-              <form>
+              <form action="email.php" method="post"> 
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
                       <input
                         type="text"
+                        name="name"
                         class="form-control"
                         id="name"
                         placeholder="Your Name"
@@ -2249,6 +2250,7 @@
                     <div class="form-floating">
                       <input
                         type="email"
+                        name="email"
                         class="form-control"
                         id="email"
                         placeholder="Your Email"
@@ -2264,6 +2266,7 @@
                     >
                       <input
                         type="text"
+                        name="date"
                         class="form-control datetimepicker-input"
                         id="datetime"
                         placeholder="Date & Time"
@@ -2275,7 +2278,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <select class="form-select" id="select1">
+                      <select class="form-select" name="people" id="select1">
                         <option value="1">People 1</option>
                         <option value="2">People 2</option>
                         <option value="3">People 3</option>
@@ -2286,6 +2289,7 @@
                   <div class="col-12">
                     <div class="form-floating">
                       <textarea
+                        name="msg"
                         class="form-control"
                         placeholder="Special Request"
                         id="message"

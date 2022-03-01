@@ -169,6 +169,7 @@ Greetings. */
 }
 
 .hero-header img {
+    margin-right: 10%;
     animation: imgRotate 50s linear infinite;
 }
 
