@@ -58,21 +58,21 @@ $mail->Password = "mutall_2015";
 //Set who the message is to be sent from. The system picks the name but ovverides
 //the username with the one specifoed avove; so, it dpes not matter what you
 //type but it has to be a valid email address
-$mail->setFrom('peterkmuraya@gmail.com', 'Peter Muraya');
+$mail->setFrom($email, $name);
 //
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 //
 //Set who the message is to be sent to. I should be able to see this email from
 //my inbox under sent emails
-$mail->addAddress('mutallcompany@gmail.com', 'Mutall');
+$mail->addAddress('danielkaniuke@gmail.com', 'Daniel Kaniu');
 //
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
 //
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
+$mail->msgHTML(file_get_contents('menu.html'), __DIR__);
 //
 //Replace the plain text body with one created manually
 //$mail->AltBody = 'This is a plain-text message body';
