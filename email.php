@@ -50,10 +50,10 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 //
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "peterkmuraya@gmail.com";
+$mail->Username = "danielkaniuke@gmail.com";
 //
 //Password to use for SMTP authentication
-$mail->Password = "mutall_2015";
+$mail->Password = "Godwins+$";
 //
 //Set who the message is to be sent from. The system picks the name but ovverides
 //the username with the one specifoed avove; so, it dpes not matter what you
@@ -65,7 +65,7 @@ $mail->setFrom($email, $name);
 //
 //Set who the message is to be sent to. I should be able to see this email from
 //my inbox under sent emails
-$mail->addAddress('danielkaniuke@gmail.com', 'Daniel Kaniu');
+$mail->addAddress('danniu254@gmail.com', 'Daniel Kaniu');
 //
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
@@ -75,7 +75,7 @@ $mail->Subject = 'PHPMailer GMail SMTP test';
 $mail->msgHTML(file_get_contents('menu.html'), __DIR__);
 //
 //Replace the plain text body with one created manually
-//$mail->AltBody = 'This is a plain-text message body';
+//$mail->AltBody = 'Msg';
 //
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
