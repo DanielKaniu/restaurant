@@ -6,9 +6,9 @@
  * The IMAP section shows how to save this message to the 'Sent Mail' folder using IMAP commands.
  */
 //Include the phpmailer lfiles
-require_once "../library/PHPMailer-master/src/PHPMailer.php";
-require_once "../library/PHPMailer-master/src/Exception.php";
-require_once "../library/PHPMailer-master/src/SMTP.php";
+require_once "./PHPMailer-master/src/PHPMailer.php";
+require_once "./PHPMailer-master/src/Exception.php";
+require_once "./PHPMailer-master/src/SMTP.php";
 
 //
 //Import PHPMailer classes into the global namespace
